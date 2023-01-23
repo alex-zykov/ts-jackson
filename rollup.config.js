@@ -22,7 +22,7 @@ export default [
         ],
         plugins: [
             resolve(),
-            typescript({ sourceMap: true }),
+            typescript({ sourceMap: true, inlineSources: true }),
             commonjs({
                 exclude: 'node_modules',
                 ignoreGlobal: true
